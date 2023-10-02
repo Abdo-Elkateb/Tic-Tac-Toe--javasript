@@ -8,11 +8,13 @@
     --color-body: #1b1b1b;
     --color-header: #c6c6c636;
     --color-content: #fff;
+    --family: 'Shantell Sans', cursive;
+    --borad-color:#f0db4f;
 }
 
 body {
     background: var(--color-body);
-    font-family: 'Shantell Sans', cursive;
+    font-family: var(--family)
 
 }
 
@@ -53,7 +55,7 @@ body {
 }
 
 #grid-container {
-    background-color: #f0db4f;
+    background-color: var(--borad-color);
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 50px;
@@ -73,11 +75,11 @@ body {
 }
 
 .square:hover {
-    background-color: #c6b424;
+    background-color: var(--borad-color);
 }
 
 #footer button {
-    font-family: 'Shantell Sans', cursive;
+   font-family: var(--family);
     background: #4b25d6;
     color: var(--color-content);
     font-size: 20px;

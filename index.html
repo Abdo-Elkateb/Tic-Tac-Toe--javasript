@@ -1,121 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- link tag from css style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- gogle fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap"
-        rel="stylesheet">
-        <!-- alertify js -->
-        <!-- JavaScript -->
-        <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
-    <title>Document</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- alertify js -->
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
-<body>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+    />
+    <title>index</title>
+  </head>
+
+  <body>
     <!-- body -->
     <div id="all-content">
-        <div id="main-content">
+      <div id="main-content">
+        <div class="container-borad">
+          <!-- HEADER -->
+          <div id="header">
+            <h2 id="instruction">x trun</h2>
+          </div>
+          <!-- HEADER -->
 
-            <div class="container-borad">
-
-            <!-- HEADER -->
-            <div id="header">
-                <h2 id="instruction">
-                    x trun
-                </h2>
-
+          <!-- BOARD -->
+          <div id="grid-container">
+            <div
+              class="square"
+              value="1"
+              style="border-top: none; border-left: none"
+            >
+              <h3 class="square-content"></h3>
             </div>
-            <!-- HEADER -->
-
-            <!-- BOARD -->
-            <div id="grid-container">
-                <div class="square" value="1" style="border-top:none; border-left:none">
-                    <h3 class="square-content">
-
-
-                    </h3>
-
-                </div>
-                <div class="square" value="2" style="border-top:none">
-                    <h3 class="square-content">
-
-
-                    </h3>
-
-                </div>
-                <div class="square" value="3" style="border-top:none; border-right:none">
-                    <h3 class="square-content">
-                         
-
-                    </h3>
-
-                </div>
-                <!-- row 2 -->
-                <div class="square" value="4" style=" border-left:none">
-                    <h3 class="square-content">
-                        
-
-                    </h3>
-
-                </div>
-                <div class="square" value="5" style="">
-                    <h3 class="square-content">
-                        
-
-                    </h3>
-
-                </div>
-                <div class="square" value="6" style="border-right:none">
-                    <h3 class="square-content">
-                        
-
-                    </h3>
-
-                </div>
-                <!-- row 3 -->
-                <div class="square" value="7" style="border-bottom:none; border-left:none">
-                    <h3 class="square-content">
-                        
-
-                    </h3>
-
-                </div>
-                <div class="square" value="8" style="border-bottom:none">
-                    <h3 class="square-content">
-                        
-
-                    </h3>
-
-                </div>
-                <div class="square" value="9" style="border-bottom:none; border-right :none">
-                    <h3 class="square-content">
-                        
-
-                    </h3>
-
-                </div>
-                
+            <div class="square" value="2" style="border-top: none">
+              <h3 class="square-content"></h3>
             </div>
-
-
-            <!-- BOARD -->
-                <div id="footer">
-                    <button class="rest" id="rest">rest</button>
-                </div>
+            <div
+              class="square"
+              value="3"
+              style="border-top: none; border-right: none"
+            >
+              <h3 class="square-content"></h3>
             </div>
+            <!-- row 2 -->
+            <div class="square" value="4" style="border-left: none">
+              <h3 class="square-content"></h3>
+            </div>
+            <div class="square" value="5" style="">
+              <h3 class="square-content"></h3>
+            </div>
+            <div class="square" value="6" style="border-right: none">
+              <h3 class="square-content"></h3>
+            </div>
+            <!-- row 3 -->
+            <div
+              class="square"
+              value="7"
+              style="border-bottom: none; border-left: none"
+            >
+              <h3 class="square-content"></h3>
+            </div>
+            <div class="square" value="8" style="border-bottom: none">
+              <h3 class="square-content"></h3>
+            </div>
+            <div
+              class="square"
+              value="9"
+              style="border-bottom: none; border-right: none"
+            >
+              <h3 class="square-content"></h3>
+            </div>
+          </div>
+
+          <!-- BOARD -->
+          <div id="footer">
+            <button class="rest" id="rest">rest</button>
+          </div>
         </div>
+      </div>
     </div>
-
-</body>
-<!-- js -->
-<script src="./main.js"></script>
+  </body>
+  <!-- js -->
+  <script src="./main.js"></script>
 </html>

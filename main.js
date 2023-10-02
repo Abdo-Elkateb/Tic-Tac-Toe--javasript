@@ -13,7 +13,6 @@ function startGame() {
             if (gameIsFinshed) {
                 return
             }
-
             // filling the value visually
             let value = item.getAttribute("value");
             let index = value - 1
@@ -35,6 +34,8 @@ function startGame() {
             }
             document.getElementById('instruction').textContent = `${currentTurn} turn`
         })
+
+        // evaluateBorad
 
         function evaluateBorad() {
             if (
@@ -84,7 +85,6 @@ document.getElementById("rest").addEventListener("click", function () {
 })
 
 function rest() {
-
     for (item of gridItems) {
         let value = item.getAttribute("value");
         let squareContent = document.querySelector(`.square[value="${value}"]`)
@@ -98,6 +98,4 @@ function rest() {
         document.getElementById('instruction').innerText = `${currentTurn} turn`
 
     }
-
-
 }
